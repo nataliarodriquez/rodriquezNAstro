@@ -1,180 +1,41 @@
 ---
-
+import"../styles/global.css";
+import PageHeader from "../components/PageHeader.astro";
+import PageFooter from "../components/PageFooter.astro";
+import Features from "../components/Features.astro";
+import PageContent from "../components/PageContent.astro";
+import Semesters from "../components/Semesters.astro";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theme Build for Astro</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Theme Build For Astro</title>
 
 </head>
 <body>
-    <!-- 
-        pageheader
-        showcase
-        features
-        pagecontent
-        semesters
-        pagefooter
-    -->
+<!--
+pageheader
+showcase
+features
+pagecontent
+semesters
+pagefooter
+-->
+</PageHeader>
+<!-- Begin Showcase -->
+<section id="showcase">showcase</section>
+<!-- End Showcase -->
 
-    <!-- Begin Pageheader -->
-    <header id="pageheader">
-        pageheader
-    </header>
-    <!-- End Pageheader -->
+</Features>
 
-    <!-- Begin Showcase -->
-    <section id="showcase">
-        showcase
-    </section>
-    <!-- End Showcase -->
-    
-    <!-- Begin Features -->
-    <section id="features">
-        features
-    </section>
-    <!-- End Features -->
+<PageContent/>
 
-    <!-- Begin Pagecontent -->
-    <main id="pagecontent">
-        pagecontent
-    </main>
-    <!-- End Pagecontent -->
+<Semesters/>
 
-    <!-- Begin Semesters -->
-    <section id="semesters">semesters</section>
-    <!-- End Semesters -->
-
-    <!-- Begin Pagefooter -->
-    <footer id="pagefooter">
-        pagefooter
-    </footer>
-    <!-- End Pagefooter -->
+<PageFooter/>
 </body>
 </html>
 
-<style>
-	:root
-	{
-		--color-primary:red;
-		--color-secondary:blue;
-	}
-
-	html
-	{
-		font-size:62.5%;
-		/* Allow you to use rems instead of pixels for sizing */
-		/* 
-		.5rem = 5px
-		1rem = 10px 
-		1.6rem = 16px
-		2rem = 20px
-		6rem = 60px
-		 */
-		
-	}
-
-	/* Browser Reset */
-	*, *::before, *::after
-	{
-		margin:0;
-		padding:0;
-		box-sizing:border-box;
-	}
-
-	/* Easy Pixel Calculations with Rem */
-	body
-	{
-		font-size:1.6rem;
-	}
-
-	/* Fix Browser Bounce on Macs */
-	body
-	{
-		overflow-x:auto;
-		width:100%;
-		overscroll-behavior:none;
-	}
-
-	#pageheader
-	{
-		min-height:200px;
-		background-color:coral;
-		padding:1rem;
-	}
-	#showcase
-	{
-		min-height:200px;
-		background-color:rgb(223, 255, 80);
-		padding:1rem;
-	}
-	#features
-	{
-		min-height:200px;
-		background-color:rgb(165, 255, 80);
-		padding:1rem;
-	}
-	#pagecontent
-	{
-		min-height:200px;
-		background-color:rgb(80, 255, 138);
-		padding:1rem;
-	}
-	#semesters
-	{
-		min-height:200px;
-		background-color:rgb(80, 240, 255);
-		padding:1rem;
-	}
-	#pagefooter
-	{
-		min-height:200px;
-		background-color:rgb(80, 156, 255);
-		padding:1rem;
-	}
-	
-	/* Media Queries */
-	@media only screen and (min-width:320px)
-	{
-		body
-		{
-			background-color:magenta;
-		}
-	}
-
-	@media only screen and (min-width:480px)
-	{
-		body
-		{
-			background-color:yellow;
-		}
-	}
-
-	@media only screen and (min-width:768px)
-	{
-	body
-	{
-		background-color:yellow;
-	}
-	}
-
-
-	@media only screen and (min-width:1024px)
-	{
-		body
-		{
-			background-color:lime;
-		}
-	}
-
-	@media only screen and (min-width:1200px)
-	{
-		body
-		{
-			background-color:steelblue;
-		}
-	}
-</style>
