@@ -1,6 +1,6 @@
 :root {
-	--color-primary: red;
-	--color-secondary: blue;
+	--color-primary: #1F2544;
+	--color-secondary: #474F7Af;
 	}
 	html {
 	font-size: 62.5%;
@@ -23,93 +23,441 @@
 	}
 	
 	/* Easy Pixel Calculations with Rem Units */
-	body {
-	font-size: 1.6rem;
-	}
+	
 	/* Fix Browser Bounce on Macs */
 	body {
 	overflow-x: auto;
 	width: 100%;
 	overscroll-behavior: none;
+	/* Allows for easy pixel calcs in rems */
+	font-size:1.6rem;
 	}
 	
+
+
+	/*
+	All Sections 
+
+	pageheader
+	showcase
+	features
+	pagecontent
+	semesters
+	pagefooter
+	*/
+
 	/* General Mobile First CSS */
+
+	body
+	{
+		/*********padding:1.0rem; */
+		font-family:Arial, Helvetica, sans-serif;
+		line-height:1.7rem;
+		background-color:#1d1d1d;
+		color:#333;
+	}
+
+	/* Link Styles */
+	a
+	{
+		color:red;
+		text-decoration:none;
+	}
+
+	/* Header Styles */
+	h1,h2
+	{
+		text-align:center;
+	}
+
+	h1,h2,h3
+	{
+		line-height:1.2;
+		font-family:Georgia, 'Times New Roman', Times, serif;
+	}
+
+	/* Container Styles */
 	
 	.container {
 	background-color: white;
 	min-height: 10rem;
-	
 	max-width: 120rem;
 	margin: auto;
 	padding: 0rem 3rem 0rem 3rem;
 	}
-	
+
+	/* End General Mobile CSS Styles */
 	#pageheader {
-	min-height: 200px;
-	background-color: coral;
-	padding: 1rem;
-	}
+		background-color:var(--color-primary);
+		min-height:0.7rem;
+		}
+	
+
+	/* Showcase Section Styles */
 	#showcase {
-	min-height: 200px;
-	background-color: lightblue;
-	padding: 1rem;
+	border: .2rem solid none;
+	background-color:var(--color-primary);
+	padding:10rem;
+	background-image:linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+	background-image:url(images/sewer.png);
+	background-repeat:no-repeat;
+	background-size:center;
+	/* background-attachment:fixed; */
+	background-position:center;
 	}
-	#features {
-	min-height: 200px;
-	background-color: aqua;
-	padding: 1rem;
+
+	#showcasetext
+	{
+		border:.2rem solid none;
+		color:#fff;
+		text-align:center;
+		margin:5rem auto;
+		max-width:60rem;
 	}
-	#pagecontent {
-	min-height: 200px;
-	background-color: lightgreen;
-	padding: 1rem;
+
+	#showcase h1 
+	{
+		font-size:5rem; /*50px */
+		margin-bottom:2rem; /*20px */
+		text-shadow: 0 0 1rem black;
 	}
-	#semesters {
-	min-height: 200px;
-	background-color: aquamarine;
-	padding: 1rem;
+
+	#showcase blockquote
+	{
+		font-size:2.4rem;
+		margin-bottom:2rem;	
+		padding:2px;
+		white-space: nowrap;
+	}
+
+	#showcaseimage
+	{
+		text-align:center;
+		/*Cheating*/
+		display:none;
+	}
+
+	#showcaseimage img 
+	{
+		border-radius:1rem;
+		margin:auto; /* Needed */
+		display:none;
+	}
+
+	#showcaseintro
+	{
+		color:#fff;
+		text-align:center;
+		font-size:3rem;
+	}
+
+	/* Hide Big Logos/Technologies for Mobile */
+	#logosbig
+	{
+		display:none;
+	}
+
+	#logossmall
+	{
+		width:30rem;
+	}
+
+	/* End of Showcase Section Styles */
+
+	/* Special Header Container Styles */
+
+	#pageheader .container
+	{
+		background-color:var(--color-secondary);
+		/* border:2px dashed red; */
+		display:flex;
+		justify-content:space-between;
+		align-items:center;	
+		height:100%;
+		padding:0 2rem 0 2rem;	
+	}
+
+	.logo img
+	{
+		height:6rem;
+	}
+
+	.logo:hover
+	{
+		animation-name:swim;
+		animation-duration:5s;
+		animation-iteration-count:infinite;
+		animation-direction:alternate;
+		animation-timing-function:linear;
+	}
+	@keyframes swim
+	{
+		0%{transform:rotate(0deg)};
+		100%{transform:rotate(45deg)};
+	}
+
+	/* Header Menu */
+
+	#menu
+	{
+		background-color: var(--color-primary);
+		/* border:2px dashed red; */
+		display:flex;
+		justify-content:space-between;
+		width:20rem;  /* 200px */
+		list-style-type:none;
+		background-color:none;
+		padding:20px;
+	}
+
+
+	#menu li a 
+	{
+		color:#fff;
+	}
+
+	/* End of Header Section Styles */
+	
+	/* Features Section */
+	#features .container
+	{
+		padding-top:2rem; /* Seperate from Showcase */
+		background-color:#474F7A;
+		/* border:2px dashed red; */
+		display:flex;
+		gap:1rem;
+		justify-content:space-between;
+		flex-direction:column;
+	}
+
+	.card
+	{
+		background-color:#fff;
+		padding:2rem;
+		box-shadow:0rem 0rem 1rem silver;
+		margin-bottom:2rem;
+		border-radius:2.5rem;
+
+	}
+
+	/* End Features Section Styles */
+
+	/*  Pagecontent Section  */
+
+	#pagecontent
+	{
+		background-color:none;
+		padding:2rem 0 2rem 0;
+	}
+
+	#pagecontent .container
+	{
+		padding:2rem;
+	}
+	#pagecontent h2, h3
+	{
+		padding:2rem;
+	}
+
+	#pagecontent h2 
+	{
+		font-size:4rem;
+	}
+
+	#pagecontent h3
+	{
+		font-size:2.5rem;
+	}
+
+	/* End Pagecontent Section */
+
+	/* Semester Section */
+	#semesters
+	{
+		padding:2rem 0 2rem 0;
+	}
+
+	#semesters h2, #semesters h3
+	{
+		padding:2rem 0 2rem 0;
+	}
+
+	#semesters h2 
+	{
+		font-size:4rem;
+	}
+
+	#semesters h3
+	{
+		font-size:2.5rem;
+	}
+
+	.assignments a
+	{
+		color:#3B3486;
+	}
+
+	#semesters .container
+	{
+		padding:2rem;
+	}
+
+	/* Semesters Thumbnail Section */
+	.thumbnail
+	{
+		background-color:#474F7A;
+		/* border:2px dashed red; */
+		display:flex;
+		justify-content:space-evenly;
+		align-items:center;
+		flex-wrap:wrap;
+		align-content:center;
+		padding:20px;
+	}
+
+	.thumb
+	{
+		width:150px;
+		height:150px;
+	}
+
+	.thumb:hover
+	{
+		animation-name:tilt;
+		animation-duration:1s;
+		animation-fill-mode:forwards;
+	}
+
+	@keyframes tilt
+	{
+		0%{transform:rotate(0deg);}
+		100%{transform:rotate(-15deg);}
+	}
+	/* End Semester Section */
+	
+
+	/* Footer Section */
+
+	#bive
+	{
+		height:250px;
+		width:250px;
+		margin:auto;
+		display:block;
 	}
 	#pagefooter {
-	min-height: 200px;
-	background-color: cornflowerblue;
-	padding: 1rem;
+	background-color:var(--colorprimary);
+	color:#fff;
+	text-align:center;
+	padding:2rem;
+	padding-top:6rem;
 	}
+	#pagefooter .container
+	{
+		background-color:var(--color-primary);
+		/* border:2px dashed red; */
+		display:flex;
+		justify-content:space-evenly;
+		align-items:center;
+	}
+
+	#pagefooter a
+	{
+		color:#fff;
+	}
+
+	#pagefooter a:hover
+	{
+		color: rgb(101, 227, 198);
+	}
+
+	#pagefooter h3
+	{
+		padding-bottom:3rem;
+	}
+
+	#pagefooter #quote
+	{
+		text-align:left;
+	}
+
+	#pagefooterlinks
+	{
+		display:none;
+		padding:1.5rem;
+	}
+
+	/* End Footer Section Styles */
 	
 	/* Media Queries */
-	@media only screen and (min-width: 320px) {
-	body {
-	font-size: 1rem;
+	@media only screen and (min-width:320px)
+	{
+		#features
+		{
+			background-color:none;
+		}
 	}
-	#features {
-	background-color: magenta;
+
+	@media only screen and (min-width:480px)
+	{
+		#features
+		{
+			background-color:none;
+		}
 	}
+
+	@media only screen and (min-width:768px)
+	{
+		#features
+		{
+			background-color:none;
+		}
+
+		.card
+		{
+			flex-basis:30%;
+		}
+
+		#features .container
+		{
+			flex-direction:row;
+		}
+
+		h1, h2
+		{
+			text-align:left;
+		}
+
+		}
+	
+	@media only screen and (min-width:1024px)
+	{
+		#features 
+		{
+			background-color:var(--color-primary);		
+		}
+
+		#logosbig
+		{
+			display:block;
+			margin:auto;
+		}
+
+		#logossmall
+		{
+			display:none;
+		}
 	}
-	@media only screen and (min-width: 480px) {
-	body {
-	font-size: 1.4rem;
-	}
-	#features {
-	background-color: yellow;
-	}
-	}
-	@media only screen and (min-width: 768px) {
-	body {
-	font-size: 1.6rem;
-	}
-	#features {
-	background-color: lime;
-	}
-	}
-	@media only screen and (min-width: 1024px) {
-	#features {
-	background-color: coral;
-	}
-	}
-	@media only screen and (min-width: 1200px) {
-	body {
-	font-size: 2rem;
-	}
-	#features {
-	background-color: steelblue;
-	}
+
+	@media only screen and (min-width:1200px)
+	{
+		features
+		{
+			background-color:none;	
+		}
+
+		#pagefooterlinks
+		{
+			display:block;
+		}
 	}
