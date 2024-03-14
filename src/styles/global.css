@@ -128,6 +128,18 @@
 		margin-bottom:2rem;	
 		padding:2px;
 		white-space: nowrap;
+		
+	}
+
+	blockquote::before
+	{
+		font-size:40px;
+		content:"“";
+	}
+	blockquote::after 
+	{
+		font-size:40px;
+		content:"”";
 	}
 
 	#showcaseimage
@@ -368,7 +380,7 @@
 
 	#pagefooter a:hover
 	{
-		color: rgb(101, 227, 198);
+		color:#F4A9EF;
 	}
 
 	#pagefooter h3
