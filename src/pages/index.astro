@@ -5,6 +5,7 @@ import PageFooter from "../components/PageFooter.astro";
 import Features from "../components/Features.astro";
 import PageContent from "../components/PageContent.astro";
 import Semesters from "../components/Semesters.astro";
+import Showcase from "../components/Showcase.astro";
 ---
 
 <!DOCTYPE html>
@@ -25,24 +26,8 @@ semesters
 pagefooter
 -->
 <PageHeader />
-<!-- Begin Showcase -->
-<section id="showcase">
-    <div id="showcasetext">
-        <h1>Natalia Rodriquez</h1>
-        <h2>Portfolio</h2>
-        <blockquote>TWO PLUS TWO EQUALS FOUR NO MATTER WHAT</blockquote>
-    </div>
 
-    <div id="showcaseimage">
-        <img src="images/technologiesbig.png" alt="Technoloiges" id="logosbig">
-        <img src="images/technologiessmall.png" alt="Technologies" id="logossmall">
-    </div>
-
-    <p id="showcaseintro">
-        This is a showcase of my web design/development work.
-    </p>
-</section>
-<!-- End Showcase -->
+<Showcase />
 
 <Features />
 
