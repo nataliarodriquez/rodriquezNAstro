@@ -31,3 +31,109 @@
     <!-- End Semesters Container -->
 </section>
 <!-- End Semesters Section -->
+
+<style>
+    /* Semester Section */
+	#semesters
+	{
+		padding:2rem 0 2rem 0;
+	}
+
+	#semesters h2, #semesters h3
+	{
+		padding:2rem 0 2rem 0;
+	}
+
+	#semesters h2 
+	{
+		font-size:4rem;
+	}
+
+	#semesters h3
+	{
+		font-size:2.5rem;
+	}
+
+	.assignments a
+	{
+		color:#3B3486;
+	}
+
+	#semesters .container
+	{
+		padding:2rem;
+	}
+
+	/* Semesters Thumbnail Section */
+	.thumbnail
+	{
+		background-color:#474F7A;
+		/* border:2px dashed red; */
+		display:flex;
+		justify-content:space-evenly;
+		align-items:center;
+		flex-wrap:wrap;
+		align-content:center;
+		padding:20px;
+	}
+
+	.thumbnail img 
+	{
+		border-radius:5%;
+	}
+
+	.thumb
+	{
+		width:150px;
+		height:150px;
+	}
+	
+	.thumbnail a {
+		background-color:none;
+		position:relative;
+	}
+
+	.thumbnail a[data-tooltip]::after
+	{
+		background-color:rgb(0,0,0,0.7);
+		color:white;
+		padding:0.5rem;
+		content:attr(data-tooltip);
+		position:absolute;
+		z-index:1;
+		top:-15%;
+		left:10%;
+		right:10%;
+		border-radius:10px;
+		text-align:center;
+		transform:scale(0);
+		transition:all 0.5s;
+	}
+
+	.thumbnail a[data-tooltip]:hover::after
+	{
+		transform:scale(1);
+	}
+	.ul:hover
+	{
+		animation-name:tilt;
+		animation-duration:1s;
+		animation-fill-mode:forwards;
+	}
+
+	.assignments a 
+	{
+		color:black;
+	}
+	.assignments a:hover 
+	{
+		color:rgb(79, 246, 255);
+	}
+	@keyframes tilt
+	{
+		0%{transform:rotate(0deg);}
+		50%{transform:rotate(-15deg);}
+		100%{transform:rotate(0deg);}
+	}
+	/* End Semester Section */
+</style>

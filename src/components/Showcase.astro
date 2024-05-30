@@ -14,3 +14,88 @@
         This is a showcase of my web design/development work.
     </p>
 </section>
+
+<style>
+    /* Showcase Section Styles */
+	#showcase {
+	border: .2rem solid none;
+	background-color:var(--color-primary);
+	padding:10rem;
+	background-image:linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+	background-image:url(/images/falin.png);
+	background-repeat:no-repeat;
+	background-size:center;
+	/* background-attachment:fixed; */
+	background-position:center;
+	}
+
+	#showcasetext
+	{
+		border:.2rem solid none;
+		color:#fff;
+		text-align:center;
+		margin:5rem auto;
+		max-width:60rem;
+	}
+
+	#showcase h1 
+	{
+		font-size:5rem; /*50px */
+		margin-bottom:2rem; /*20px */
+		text-shadow: 0 0 1rem black;
+	}
+
+	#showcase blockquote
+	{
+		font-size:2.4rem;
+		margin-bottom:2rem;	
+		padding:2px;
+		white-space: nowrap;
+		
+	}
+
+	blockquote::before
+	{
+		font-size:40px;
+		content:"“";
+	}
+	blockquote::after 
+	{
+		font-size:40px;
+		content:"”";
+	}
+
+	#showcaseimage
+	{
+		text-align:center;
+		/*Cheating*/
+		display:none;
+	}
+
+	#showcaseimage img 
+	{
+		border-radius:1rem;
+		margin:auto; /* Needed */
+		display:none;
+	}
+
+	#showcaseintro
+	{
+		color:#fff;
+		text-align:center;
+		font-size:3rem;
+	}
+
+	/* Hide Big Logos/Technologies for Mobile */
+	#logosbig
+	{
+		display:none;
+	}
+
+	#logossmall
+	{
+		width:30rem;
+	}
+
+	/* End of Showcase Section Styles */
+</style>
