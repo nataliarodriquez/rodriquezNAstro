@@ -13,12 +13,12 @@ author: "Natalia Rodriquez"
 ## Primary Structure
 Determined by a sequence of amino acids held together by covalent bonds
 
-![Primary Structure](images/primary-structure_med.jpg) 
+![Primary Structure](Images/primarystructure.jpg) 
 
 ## Secondary Structure
 Through local folding of amino acids chains (alpha helixs, beta pleated sheets)
 
-![Secondary Structure](images/6.svg)
+![Secondary Structure](Images/6.svg)
 
 ## Tertiary Structure 
 Overall 3D shape of the protein 
@@ -28,4 +28,4 @@ Overall 3D shape of the protein
 ## Quarternary Structure
 Arises from interactions between multiple polypeptide units 
 
-![Quarternary Structure](images/images.jpg)
+![Quarternary Structure](Images/proteins.jpg)

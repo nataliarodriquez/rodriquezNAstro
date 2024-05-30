@@ -36,6 +36,6 @@ Denotain = dictionary defintinion
 
 Connotation = associations we make with the word 
 
-![Slang Table](images/Screenshot%202023-09-29%20at%201.28.08%20PM.png)
+![Slang Table](images/fallacy.png)
 
 

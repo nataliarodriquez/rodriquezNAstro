@@ -10,9 +10,9 @@ author: "Natalia Rodriquez"
 
 1 Water Molecule can bond to 4 others. 
 
-![Water Molecules](images/wss-propety-water-molecule-bonding.jpg)
+![Water Molecules](Images/proteins.jpg)
 
 
 - Ice is less dense than water so it floats
 
-![PH Scale](images/PH_Scale.png)
+![PH Scale](Images/PHScale.png)

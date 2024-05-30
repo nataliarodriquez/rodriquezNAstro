@@ -22,7 +22,7 @@ D. Two Types
 1. **DNA**- This polymer is the " Master Million Dollar Blueprint ". It is kept "safe" in the nucleus. ( Nucleus is like a vault to keep the DNA in.)
 2. **RNA**- This polymer is like a "cheap 10 cent copy" of the "Master Million Dollar Blueprint". It is disposable/recyclable. It makes messenger RNa and other RNA molecules.
 
-![DNA and RNA Differences](Images/Difference-Between-DNA-and-RNA.png)
+![DNA and RNA Differences](Images/DNAvsRNA.png)
 
 E. **Primidines** (C,T,U)
 1. Big name small molecule. (These have 1 Carbon ring in the Nitrogen base.)
@@ -45,7 +45,7 @@ A. James Watson and Francis Crick make the model in 1953.
 B. The two sides of DNA strands are said to be **complimentary** (They fit together perfectly)
 C. One side has information to make proteins and enzymes(The Million Dollar Blueprint);other side is a *protective cape* for the Million Dollar Blueprint. It protects the SEQUENCE of nucleotides. The sides *alternate* on each strand.
 
-![Dna Structure](images/The-DNA-double-helix-structure-Source.png)
+![Dna Structure](Images/dnastructure.jpg)
 
 ## 3. Genes and Evolution
 A. The more Nucleotide sequence "genes" in common; the *more cloesly related* the organisms are. 
